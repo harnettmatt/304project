@@ -6,6 +6,21 @@
 </head>
 <body>
 
+<?php
+// Defined as constants so that they can't be changed
+DEFINE ('DB_USER', 'cs310');
+DEFINE ('DB_PASSWORD', 'cs310pass');
+DEFINE ('DB_HOST', 'cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com:3306');
+DEFINE ('DB_NAME', 'cs310moviedb');
+
+// $dbc will contain a resource link to the database
+// @ keeps the error from showing in the browser
+
+$dbc = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME)
+OR die('Could not connect to MySQL: ' .
+mysqli_connect_error());
+?>
+
 
 </body>
 </html>
