@@ -1,3 +1,13 @@
+<html>
+
+<head>
+    <title>
+        Home
+    </title>
+</head>
+
+<body>
+
 <?php
 
 //$mysqli = mysqli_connect("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310moviedb");
@@ -16,5 +26,6 @@ while($row = $res->fetch_assoc()){
     echo $row['FirstName'];
     echo "<br>";
 }
-
 ?>
+</body>
+</html>
