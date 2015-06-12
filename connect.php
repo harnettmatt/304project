@@ -14,6 +14,7 @@ if ($mysqli->connect_errno) {
 $res = $mysqli->query(" SELECT *  FROM Account");
 while($row = $res->fetch_assoc()){
     echo $row['FirstName'];
+    echo "<br>";
 }
 
 ?>
