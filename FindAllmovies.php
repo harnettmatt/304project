@@ -28,7 +28,7 @@ $response = @mysqli_query($mysqli, $query);
 // If the query executed properly proceed
 if($response){
     echo '<table align="left"
-	cellspacing="5" cellpadding="8">
+	cellspacing="5" cellpadding="8" border="1">
 
 	<tr><td align="left"><b>Name</b></td>
 	<td align="left"><b>Director</b></td>
@@ -43,7 +43,7 @@ if($response){
     while($row = mysqli_fetch_array($response)){
 
         echo '<tr><td align="left">' .
-            $row['Mname'] . '</td><td align="left">' .
+            $row['Mname'] . ' ' . '<a href="editMovie.php?mName='.$row['Mname'].'">Edit</a>' . '</td><td align="left">' .
             $row['director'] . '</td><td align="left">' .
             $row['Myear'] . '</td><td align="left">' .
             $row['views'] . '</td><td align="left">' .
