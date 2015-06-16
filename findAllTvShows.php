@@ -45,7 +45,7 @@ if($response){
             $row['TVName'] . ' ' .
             '<a href="editTvShow.php?id='.$row['tvid'].'">Edit</a>' . ' ' .
             '<a href="season.php?id='.$row['tvid'].'">Watch</a>' . ' ' .
-            '<a href="rateTvShow.php?id='.$row['tvid'].'">Rate</a>' . '</td><td align="left">' .
+            '<a href="rate.php?id='.$row['tvid'].'">Rate</a>' . '</td><td align="left">' .
             $row['age_restriction'] . '</td><td align="left">' .
             $row['TVyear'] . '</td><td align="left">' .
             $row['overall_rating'] . '</td><td align="left">';

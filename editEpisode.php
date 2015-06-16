@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Edit TV Show</title>
+    <title>Edit Episode</title>
 </head>
 <body>
 
@@ -33,7 +33,8 @@ if($response){
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
 
-	<tr><td align="left"><b>Season</b></td>
+	<tr><td align="left"><b>Show ID</b></td>
+	<td align="left"><b>Season</b></td>
 	<td align="left"><b>Episode</b></td>
 	<td align="left"><b>Director</b></td>
 	<td align="left"><b>Name</b></td>
@@ -48,6 +49,7 @@ if($response){
     while ($row = mysqli_fetch_array($response)){
         echo '<form method="post" action="edit_episode_data.php">';
         echo '<tr><td align="left">' . '<form method="post" action="edit_episode_data.php">'.
+            '<input type="hidden" name="id" class="form-control" value="'.$row['tvid'].'"/>'.'</td><td align="left">' .
             '<input type="hidden" name="season" class="form-control" value="'.$row['season_number'].'"/>'.'</td><td align="left">' .
             '<input type="hidden" name="episode" class="form-control" value="'. $row['episode_number'].'"/>' . '</td><td align="left">' .
             '<input type="text" name="director" class="form-control" value="' . $row['director'] . '"/>' . '</td><td align="left">' .

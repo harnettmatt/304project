@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Edit Movie</title>
+    <title>Edit Episode</title>
 </head>
 <body>
 
@@ -19,6 +19,7 @@ if ($mysqli->connect_errno) {
 }
 
 // Variables for editing the episode
+$tvid=$_POST['id'];
 $id = $_POST['season'];
 $number = $_POST['episode'];
 $director = $_POST['director'];
@@ -36,11 +37,8 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response) {
-
     echo 'Updated successfully';
-    echo '<br/>';
-    echo $age;
-    echo '<a href="episode.php?id='.$id.'">Done</a>';
+    echo '<br/><a href="episode.php?id='.$tvid.'&number='.$id.'">Done</a>';
 
 } else {
 

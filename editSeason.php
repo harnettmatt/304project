@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Edit TV Show</title>
+    <title>Edit Season</title>
 </head>
 <body>
 

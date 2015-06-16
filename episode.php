@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title>Edit TV Show</title>
+    <title>TV Show - Episode</title>
 </head>
 <body>
 
@@ -49,11 +49,12 @@ if($response){
     while ($row = mysqli_fetch_array($response)){
         echo '<tr><td align="left">' .
             $row['season_number'].'</td><td align="left">'.
-            $row['episode_number'].' '.
-            '<a href="editEpisode.php?id='.$row['season_number'].'&number='.$row['episode_number'].'">Edit</a>' . ' ' .
-            '<a href="watch.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Watch</a>' . ' ' . '</td><td align="left">'.
+            $row['episode_number'].' '.'</td><td align="left">'.
             $row['director'].'</td><td align="left">'.
-            $row['Ename'].'</td><td align="left">'.
+            $row['Ename']. ' '.
+            '<a href="editEpisode.php?id='.$row['season_number'].'&number='.$row['episode_number'].'">Edit</a>'.' '.
+            '<a href="watchEP.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Watch</a>'. ' '.
+            '<a href="rate.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Rate</a>'.'</td><td align="left">'.
             $row['Edate'] . '</td><td align="left">'.
             $row['overall_rating'].'</td><td align="left">'.
             $row['age_restriction'].'</td><td align="left">'.
