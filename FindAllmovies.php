@@ -43,7 +43,9 @@ if($response){
     while($row = mysqli_fetch_array($response)){
 
         echo '<tr><td align="left">' .
-            $row['Mname'] . ' ' . '<a href="editMovie.php?mName='.$row['Mname'].'">Edit</a>' . '</td><td align="left">' .
+            $row['Mname'] . ' ' . '<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
+            '<a href="watchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
+            '<a href="rateMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>' . '</td><td align="left">' .
             $row['director'] . '</td><td align="left">' .
             $row['Myear'] . '</td><td align="left">' .
             $row['views'] . '</td><td align="left">' .

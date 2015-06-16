@@ -19,9 +19,10 @@ if ($mysqli->connect_errno) {
 }
 
 $tvid = $_GET['id'];
+$number = $_GET['number'];
 
 // Create a query for the database
-$query = "SELECT * FROM TVSeries WHERE tvid='$tvid'";
+$query = "SELECT * FROM Season_s_has WHERE tvid='$tvid' AND season_number='$number'";
 
 // Get a response from the database by sending the onnection
 // and the query
@@ -33,25 +34,20 @@ if($response){
 	cellspacing="5" cellpadding="8" border="1">
 
     <td align="left"><b>Id</b></td>
-	<td align="left"><b>Name</b></td>
-	<td align="left"><b>Age Restriction</b></td>
-	<td align="left"><b>Year</b></td>
-	<td align="left"><b>Overall Rating</b></td>';
+	<td align="left"><b>Season</b></td>
+	<td align="left"><b>Date</b></td>';
 
     // mysqli_fetch_array will return a row of data from the query
     // until no further data is available
-    if ($row = mysqli_fetch_array($response)){
-        echo '<form method="post" action="edit_tv_data.php">';
-        echo '<tr><td align="left">' .
-            '<input type="hidden" name="id" class="form-control" value="' . $row['tvid'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="name" class="form-control" value="' . $row['TVName'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="age" class="form-control" value="' . $row['age_restriction'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="year" class="form-control" value="' . $row['TVyear'] . '"/>' . '</td><td align="left">' .
-            $row['overall_rating'] . '</td><td align="left">'.
+    while ($row = mysqli_fetch_array($response)){
+        echo '<form method="post" action="editSeasonData.php">';
+        echo '<tr><td align="left">' . '<form method="post" action="edit_movie_data.php">'.
+            '<input type="hidden" name="id" class="form-control" value="' . $tvid . '"/>' . '</td><td align="left">' .
+            '<input type="hidden" name="number" class="form-control" value="' . $row['season_number'] . '"/>' . '</td><td align="left">' .
+            '<input type="text" name="date" class="form-control" value="' . $row['Sdate'] . '"/>' . '</td><td align="left">' .
             '<input type="submit" value="Submit"/>';
         echo '</tr>';
-        echo '</form>';
-    }
+        echo '</form>';    }
 
     echo '</table>';
 

@@ -21,7 +21,7 @@ if ($mysqli->connect_errno) {
 $tvid = $_GET['id'];
 
 // Create a query for the database
-$query = "SELECT * FROM TVSeries WHERE tvid='$tvid'";
+$query = "SELECT * FROM Season_s_has WHERE tvid='$tvid'";
 
 // Get a response from the database by sending the onnection
 // and the query
@@ -33,24 +33,19 @@ if($response){
 	cellspacing="5" cellpadding="8" border="1">
 
     <td align="left"><b>Id</b></td>
-	<td align="left"><b>Name</b></td>
-	<td align="left"><b>Age Restriction</b></td>
-	<td align="left"><b>Year</b></td>
-	<td align="left"><b>Overall Rating</b></td>';
+	<td align="left"><b>Season</b></td>
+	<td align="left"><b>Date</b></td>';
 
     // mysqli_fetch_array will return a row of data from the query
     // until no further data is available
-    if ($row = mysqli_fetch_array($response)){
-        echo '<form method="post" action="edit_tv_data.php">';
+    while ($row = mysqli_fetch_array($response)){
         echo '<tr><td align="left">' .
-            '<input type="hidden" name="id" class="form-control" value="' . $row['tvid'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="name" class="form-control" value="' . $row['TVName'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="age" class="form-control" value="' . $row['age_restriction'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="year" class="form-control" value="' . $row['TVyear'] . '"/>' . '</td><td align="left">' .
-            $row['overall_rating'] . '</td><td align="left">'.
-            '<input type="submit" value="Submit"/>';
+            $row['tvid'] . '</td><td align="left">'.
+            $row['season_number'].' '.
+            '<a href="editSeason.php?id='.$row['tvid'].'&number='.$row['season_number'].'">Edit</a>' . ' ' .
+            '<a href="episode.php?id='.$row['tvid'].'&number='.$row['season_number'].'">Watch</a>' . ' ' .'</td><td align="left">'.
+            $row['Sdate'] . '</td><td align="left">';
         echo '</tr>';
-        echo '</form>';
     }
 
     echo '</table>';

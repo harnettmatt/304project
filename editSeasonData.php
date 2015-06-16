@@ -18,15 +18,13 @@ if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 }
 
-// Variables for editing the movie
-$moName = $_POST['name'];
-$edit_director = $_POST['director'];
-$edit_Year = $_POST['year'];
-$edit_age = $_POST['age'];
-$edit_description = $_POST['description'];
+// Variables for editing the season
+$id = $_POST['id'];
+$number = $_POST['number'];
+$date = $_POST['date'];
 
 // Create a query for the database
-$query = "UPDATE Movie SET director='$edit_director', Myear='$edit_Year', age_restriction='$edit_age', description='$edit_description' WHERE Mname='$moName'";
+$query = "UPDATE Season_s_has SET Sdate='$date' WHERE tvid='$id' AND season_number='$number' ";
 
 // Get a response from the database by sending the onnection
 // and the query
@@ -34,13 +32,16 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response) {
-    echo "Updated successfully <br/>";
-    echo '<a href="FindAllmovies.php" >Done</a>';
+    echo 'Updated successfully';
+    echo '<br/>';
+    echo '<a href="season.php?id='.$id.'">Done</a>';
 } else {
 
     echo "Failed to update your request<br/>";
 
     echo mysqli_error($mysqli);
+    echo '<br/>';
+    echo '<a href="editSeasonData.php">Back</a>';
 
 }
 
