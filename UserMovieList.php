@@ -15,6 +15,9 @@ $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "c
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 }
+
+$UserName = $_GET['UserName'];
+
 $query = "SELECT * FROM Movie";
 
 $response = @mysqli_query($mysqli, $query);
@@ -36,7 +39,7 @@ if ($response) {
         $director = $row['director'];
         $Myear = $row['Myear'];
         echo '<tr><td align="left">' .
-            '<a href="usermovie.php?Mname=' . $Mname . '&director=' . $director . '&Myear=' . $Myear . '">' . $row['Mname'].  '</a>' . '</td><td align="left">' .
+            '<a href="usermovie.php?Mname=' . $Mname . '&director=' . $director . '&Myear=' . $Myear . '&UserName=' . $UserName .'">' . $row['Mname'].  '</a>' . '</td><td align="left">' .
             $row['director'] . '</td><td align="left">' .
             $row['Myear'] . '</td><td align="left">' .
             $row['views'] . '</td><td align="left">' .

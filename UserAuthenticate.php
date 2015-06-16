@@ -56,7 +56,11 @@ if(isset($_POST['submit'])) {
         $result3 = $mysqli->query($query3);
 
 
+
         if($result->num_rows > 0) {
+            session_start();
+            $_SESSION['Uname'] = $Uname;
+//            $_SESSION['Pword'] = $Pword;   CANNOT ACCESS $PWORD
             header("location:MainAccount.php");
             exit;
         } else if ($result2->num_rows > 0){
