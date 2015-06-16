@@ -4,8 +4,7 @@
 </head>
 <body>
 
-<form action="http://localhost:63342/304project/UserAuthenticate.php" method="post">
-
+<form action=UserAuthenticate.php method="post">
     <b>Sign In</b>
 
     <p>User Name:
@@ -22,8 +21,6 @@
     </p>
 
 </form>
-
 <a href="addUser.php"> Sign Up For An Account</a>
-
 </body>
 </html>

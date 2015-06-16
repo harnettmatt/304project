@@ -107,6 +107,7 @@ if(isset($_POST['submit'])){
             echo "Failed to connect to MySQL: " . $mysqli->connect_error;
         }
 
+
         $query = "INSERT INTO Employee (ID, LastName, FirstName, Phone, Address, UserName, Password,
         Email) VALUES (DEFAULT, ?, ?, ?, ?, ?, ?, ?)";
 

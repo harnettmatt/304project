@@ -1,10 +1,3 @@
-
-<html>
-<head>
-    <title>Add Employee</title>
-</head>
-<body>
-
 <?php
 /**
  * Created by PhpStorm.
@@ -13,102 +6,87 @@
  * Time: 8:20 AM
  */
 
-    if(isset($_POST['submit'])){
+if(isset($_POST['submit'])) {
 
-        $data_missing = array();
+    if (empty($_POST['UserName'])) {
 
-    if(empty($_POST['UserName'])){
-
-    // Adds name to array
+        // Adds name to array
         $data_missing[] = 'User Name';
 
     } else {
 
-    // Trim white space from the name and store the name
-        $Uname = trim($_POST['UserName']);
+        // Trim white space from the name and store the name
+        $Uname = $_POST['UserName'];
 
     }
 
-    if(empty($_POST['Password'])){
+    if (empty($_POST['Password'])) {
 
-    // Adds name to array
+        // Adds name to array
         $data_missing[] = 'PassWord';
-
-    } else{
-
-    // Trim white space from the name and store the name
-        $Pword = trim($_POST['PassWord']);
-
-    }
-
-    if(empty($_POST['Phone'])){
-
-    // Adds name to array
-        $data_missing[] = 'Phone';
 
     } else {
 
-    // Trim white space from the name and store the name
-        $phone = trim($_POST['Phone']);
+        // Trim white space from the name and store the name
+        $Pword = $_POST['PassWord'];
 
     }
 
 
-        if(empty($data_missing)){
+    if (empty($data_missing)) {
 
-            $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
-            if ($mysqli->connect_errno) {
-                echo "Failed to connect to MySQL: " . $mysqli->connect_error;
-            }
-
-            $query = mysql_query("SELECT * FROM Account where UserName = $Uname AND PassWord = $Pword") or die(mysql_error());
-
-            $stmt = mysqli_prepare($mysqli, $query);
-
-            mysqli_stmt_bind_param($stmt, "sssssss", $lname, $fname, $phone, $address, $username,
-                $password, $email);
-
-            $ID = '10';
-
-            mysqli_stmt_execute($stmt);
-
-            $affected_rows = mysqli_stmt_affected_rows($stmt);
-
-            if($affected_rows == 1){
-
-                echo 'Employee Created';
-
-                mysqli_stmt_close($stmt);
-
-                mysqli_close($mysqli);
-
-            } else {
-
-                echo 'Error Occurred<br />';
-                echo mysqli_error($mysqli);
-
-
-                mysqli_stmt_close($stmt);
-
-                mysqli_close($mysqli);
-
-            }
-
-        } else {
-
-            echo 'You need to enter the following data<br />';
-
-            foreach($data_missing as $missing){
-
-                echo "$missing<br />";
-
-            }
-
+        $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
+        if ($mysqli->connect_errno) {
+            echo "Failed to connect to MySQL: " . $mysqli->connect_error;
         }
 
+        $Uname = mysqli_real_escape_string($mysqli, $Uname);
+        $Pword = mysqli_real_escape_string($mysqli, $Pword);
+
+        $query = "SELECT * FROM Account WHERE UserName =  '". "$Uname". "'";
+        "AND PassWord = '" ."$Pword"."'";
+        $result = $mysqli->query($query);
+
+        $query2 = "SELECT * FROM User_U_Has WHERE username =  '". "$Uname". "'";
+        "AND Password = '" ."$Pword"."'";
+        $result2 = $mysqli->query($query2);
+
+        $query3 = "SELECT * FROM Employee WHERE Username =  '". "$Uname". "'";
+        "AND Password = '" ."$Pword"."'";
+        $result3 = $mysqli->query($query3);
+
+
+        if($result->num_rows > 0) {
+            header("location:MainAccount.php");
+            exit;
+        } else if ($result2->num_rows > 0){
+            header("location:SubAccount.php");
+            exit;
+        } else if ($result3->num_rows > 0){
+            header("location:EmployeeAccount.php");
+            exit;
+        } else {
+            echo "Incorrect User Name or Password, please try again!";
+            echo "$mname";
+            echo "$pw";
+        }
+    } else {
+        echo "Please enter both UserName and Password!";
     }
 
-?>
 
-</body>
-</html>
+}
+
+?>
+<!---->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Authenticate</title>-->
+<!--</head>-->
+<!--<body>-->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--</body>-->
+<!--</html>-->
