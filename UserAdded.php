@@ -131,12 +131,18 @@ if(isset($_POST['submit'])){
             echo "Failed to connect to MySQL: " . $mysqli->connect_error;
         }
 
+        $query1 = "SELECT * FROM Account";
+        $result = $mysqli->query($query1);
+
+        $rowcount=mysqli_num_rows($result);
+        $rowcount++;
+
         $query = "INSERT INTO Account (ID, LastName, FirstName, Phone, Address, UserName, Password, CreditCard,
         Email, AccountType) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = mysqli_prepare($mysqli, $query);
 
-        mysqli_stmt_bind_param($stmt, "ssssssssss", $ID, $lname, $fname, $phone, $address, $username,
+        mysqli_stmt_bind_param($stmt, "ssssssssss", $rowcount, $lname, $fname, $phone, $address, $username,
             $password, $credit, $email, $type);
 
         $ID = '5';
