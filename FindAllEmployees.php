@@ -3,7 +3,6 @@
     <title>Find All Employees</title>
 </head>
 <body>
-
 <?php
 /**
  * Created by PhpStorm.
@@ -19,7 +18,7 @@ if ($mysqli->connect_errno) {
 }
 
 	// Create a query for the database
-	$query = "SELECT EID, LastName, FirstName, Phone, Address, Username, Password, Email FROM Employee";
+	$query = "SELECT ID, LastName, FirstName, Phone, Address, Username, Password, Email FROM Employee";
 
 	// Get a response from the database by sending the connection
 	// and the query
@@ -44,7 +43,7 @@ if ($mysqli->connect_errno) {
         while($row = mysqli_fetch_array($response)){
 
             echo '<tr><td align="left">' .
-                $row['EID'] . '</td><td align="left">' .
+                $row['ID'] . '</td><td align="left">' .
                 $row['LastName'] . '</td><td align="left">' .
                 $row['FirstName'] . '</td><td align="left">' .
                 $row['Phone'] . '</td><td align="left">' .
@@ -70,6 +69,5 @@ if ($mysqli->connect_errno) {
 	mysqli_close($mysqli);
 
 	?>
-
 </body>
 </html>

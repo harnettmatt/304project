@@ -49,5 +49,8 @@
 </p>
 
 </form>
+
+<a href="SignIn.php"> Sign In</a>
 </body>
 </html>
+

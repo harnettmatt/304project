@@ -107,12 +107,13 @@ if(isset($_POST['submit'])){
             echo "Failed to connect to MySQL: " . $mysqli->connect_error;
         }
 
+
         $query = "INSERT INTO Employee (ID, LastName, FirstName, Phone, Address, UserName, Password,
         Email) VALUES (DEFAULT, ?, ?, ?, ?, ?, ?, ?)";
 
         $stmt = mysqli_prepare($mysqli, $query);
 
-        mysqli_stmt_bind_param($stmt, "ssssssss", $lname, $fname, $phone, $address, $username,
+        mysqli_stmt_bind_param($stmt, "sssssss", $lname, $fname, $phone, $address, $username,
             $password, $email);
 
         $ID = '10';
