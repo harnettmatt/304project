@@ -191,7 +191,6 @@ if(isset($_POST['submit'])){
         <input type="text" name="Email" size="30" value="" />
     </p>
 
-
     <p>
         <input type="submit" name="submit" value="Send" />
     </p>
