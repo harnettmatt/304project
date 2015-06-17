@@ -36,8 +36,7 @@ if($response){
 	<td align="center"><b>First Name</b></td>
 	<td align="center"><b>Last Name</b></td>
 	<td align="center"><b>age</b></td>
-	<td align="center"><b>Username</b></td>
-	<td align="center"><b>Password</b></td>';
+	<td align="center"><b>Username</b></td>';
 
     // mysqli_fetch_array will return a row of data from the query
     // until no further data is available
@@ -49,8 +48,7 @@ if($response){
         <td align="left">'.$row['age'].'</td>
         <td align="left">'.$row['username'].' '.
         '<a href="editUser.php?id='.$row['ID'].'&username='.$row['username'].'&pw='.$row['Password'].'">Edit</a>'.' '.
-        '<a href="deleteUser.php?id='.$row['ID'].'&username='.$row['username'].'&pw='.$row['Password'].'">Delete</a>'.'</td>
-        <td align="left">'.$row['Password'].'</td>';
+        '<a href="deleteUser.php?id='.$row['ID'].'&username='.$row['username'].'&pw='.$row['Password'].'">Delete</a>'.'</td>';
         echo '</tr>';
     }
 
