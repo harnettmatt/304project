@@ -19,11 +19,11 @@ if ($mysqli->connect_errno) {
 }
 
 $id = $_GET['id'];
-$username = $_GET['username'];
+$username = $_GET['user'];
 $pw = $_GET['pw'];
 
 // Create a query for the database
-$query = "DELETE FROM User_U_Has WHERE ID='$id' AND username='$username' AND Password='$pw'";
+$query = "DELETE FROM Account WHERE ID='$id' AND username='$username' AND Password='$pw'";
 
 // Get a response from the database by sending the onnection
 // and the query
@@ -34,7 +34,7 @@ if($response){
     $row = mysqli_fetch_array($response);
 
     echo 'Deleted successfully';
-    echo '<br/><a href="EmployeeAccount.php" >Done</a>';
+    echo '<br/><a href="FindAllUsers.php" >Done</a>';
 } else {
 
     echo "Couldn't issue database query<br />";

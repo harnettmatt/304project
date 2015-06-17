@@ -1,13 +1,13 @@
 <html>
 <head>
-    <title>Edit Movie</title>
+    <title>Find All Users</title>
 </head>
 <body>
 
 <?php
 /**
  * Created by PhpStorm.
- * User: Sing4king
+ * User: Bhawandeep
  * Date: 15-06-14
  * Time: 7:34 AM
  */
@@ -18,28 +18,31 @@ if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 }
 
-// Variables for editing the movie
 $id = $_POST['id'];
-$first = $_POST['first'];
 $last = $_POST['last'];
-$age = $_POST['age'];
+$first = $_POST['first'];
+$phone = $_POST['phone'];
+$address = $_POST['address'];
 $user = $_POST['user'];
 $pw = $_POST['pw'];
+$card = $_POST['card'];
+$mail = $_POST['mail'];
+$type= $_POST['type'];
 
 // Create a query for the database
-$query = "UPDATE User_U_Has SET FirstName='$first', LastName='$last', age='$age', Password='$pw' WHERE ID='$id' AND username='$user'";
+$query = "UPDATE Account SET LastName='$last', FirstName='$first', Phone='$phone', Address='$address', Password='$pw', CreditCard='$card', Email='$mail', AccountType='$type' WHERE ID='$id' AND UserName='$user' AND Password='$pw'";
 
-// Get a response from the database by sending the onnection
+// Get a response from the database by sending the connection
 // and the query
 $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
-if($response) {
-    echo "Updated successfully <br/>";
-    echo '<a href="EmployeeAccount.php" >Done</a>';
+if($response){
+    echo 'Updated successfully!';
+    echo '<br/><a href="FindAllUsers.php">Done</a>';
 } else {
 
-    echo "Failed to update your request<br/>";
+    echo "Couldn't issue database query<br />";
 
     echo mysqli_error($mysqli);
 
