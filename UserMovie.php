@@ -24,7 +24,7 @@ if (isset($_POST['submit'])){
             //update the existing rating
         }
         else{
-            $query = "INSERT INTO m_rate VALUES ($rating, $UserName, $Mname, $director, $Myear)";
+            $query = "INSERT INTO m_rate VALUES ('$rating', '$UserName', '$Mname', '$director', '$Myear')";
             $result = $mysqli->query($query);
             if($result === TRUE){
                 echo "Rating Success";
