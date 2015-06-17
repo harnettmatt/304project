@@ -38,8 +38,8 @@ if($response){
     // until no further data is available
     if ($row = mysqli_fetch_array($response)){
 
-        echo 'You are watching: '. $row['TVName'].' - Season '.$row['season_number'].' - Ep. '.$row['episode_number'].': '.$row['Ename'].'';
-        echo '<br/><a href="episode.php?id='.$id.'&number='.$season.'">Done</a>';
+        echo 'You are watching: '. $row['TVName'].' - Season '.$season.' - Ep. '.$ep.': '.$row['Ename'].'';
+        echo '<br/><a href="userEpisode.php?id='.$id.'&number='.$season.'">Done</a>';
 
     }
 } else {
