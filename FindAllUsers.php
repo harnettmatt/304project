@@ -27,37 +27,41 @@ if ($mysqli->connect_errno) {
 
 	// If the query executed properly proceed
 	if($response){
-	echo '<table align="left"
-	cellspacing="5" cellpadding="8">
+        echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.
+            '<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a>'.' '.
+            '<a href="FindAllUsers.php" style="font-size:x-large">List of Users</a>'.'<br/>';
 
-	<tr><td align="left"><b>ID</b></td>
-	<td align="left"><b>Last Name</b></td>
-	<td align="left"><b>First Name</b></td>
-	<td align="left"><b>Phone</b></td>
-	<td align="left"><b>Address</b></td>
-	<td align="left"><b>UserName</b></td>
-	<td align="left"><b>Password</b></td>
-	<td align="left"><b>CreditCard</b></td>
-	<td align="left"><b>Email</b></td>
-	<td align="left"><b>AccountType</b></td></tr>';
 
-	// mysqli_fetch_array will return a row of data from the query
-	// until no further data is available
-	while($row = mysqli_fetch_array($response)){
+        echo '<table align="left" cellspacing="5" cellpadding="8">
 
-	echo '<tr><td align="left">' .
-        $row['ID'] . '</td><td align="left">' .
-       	$row['LastName'] . '</td><td align="left">' .
-       	$row['FirstName'] . '</td><td align="left">' .
-       	$row['Phone'] . '</td><td align="left">' .
-       	$row['Address'] . '</td><td align="left">' .
-       	$row['UserName'] . '</td><td align="left">' .
-       	$row['Password'] . '</td><td align="left">' .
-       	$row['CreditCard'] . '</td><td align="left">' .
-        $row['Email'] . '</td><td align="left">' .
-       	$row['AccountType'] . '</td><td align="left">';
+	    <tr><td align="left"><b>ID</b></td>
+	    <td align="left"><b>Last Name</b></td>
+	    <td align="left"><b>First Name</b></td>
+	    <td align="left"><b>Phone</b></td>
+	    <td align="left"><b>Address</b></td>
+	    <td align="left"><b>UserName</b></td>
+	    <td align="left"><b>Password</b></td>
+	    <td align="left"><b>CreditCard</b></td>
+	    <td align="left"><b>Email</b></td>
+	    <td align="left"><b>AccountType</b></td></tr>';
 
-	echo '</tr>';
+	    // mysqli_fetch_array will return a row of data from the query
+	    // until no further data is available
+	    while($row = mysqli_fetch_array($response)){
+
+	    echo '<tr><td align="left">' .
+            $row['ID'] . '</td><td align="left">' .
+           	$row['LastName'] . '</td><td align="left">' .
+           	$row['FirstName'] . '</td><td align="left">' .
+        	$row['Phone'] . '</td><td align="left">' .
+           	$row['Address'] . '</td><td align="left">' .
+          	$row['UserName'] . '</td><td align="left">' .
+           	$row['Password'] . '</td><td align="left">' .
+       	    $row['CreditCard'] . '</td><td align="left">' .
+            $row['Email'] . '</td><td align="left">' .
+       	    $row['AccountType'] . '</td><td align="left">';
+
+	    echo '</tr>';
 	}
 
 	echo '</table>';

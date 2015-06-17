@@ -29,6 +29,10 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response){
+    echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.
+        '<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a>'.' '.
+        '<a href="FindAllUsers.php" style="font-size:x-large">List of Users</a>'.'<br/>';
+
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
 
