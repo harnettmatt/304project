@@ -47,7 +47,7 @@ if($response){
     // until no further data is available
     while($row = mysqli_fetch_array($response)) {
         echo '<form method="post" action="edit_movie_data.php">';
-        echo '<tr><td align="left">' . '<form method="post" action="edit_movie_data.php">'.
+        echo '<tr><td align="left">'.
             '<input type="text" name="name" class="form-control" value="' . $row['Mname'] . '"/>' . '</td><td align="left">' .
             '<input type="text" name="director" class="form-control" value="' . $row['director'] . '"/>' . '</td><td align="left">' .
             '<input type="text" name="year" class="form-control" value="' . $row['Myear'] . '"/>' . '</td><td align="left">' .
