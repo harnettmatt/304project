@@ -44,7 +44,7 @@ if($response){
         echo '<tr><td align="left">' . '<form method="post" action="edit_movie_data.php">'.
             '<input type="hidden" name="id" class="form-control" value="' . $tvid . '"/>' . '</td><td align="left">' .
             '<input type="hidden" name="number" class="form-control" value="' . $row['season_number'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="date" class="form-control" value="' . $row['Sdate'] . '"/>' . '</td><td align="left">' .
+            '<input type="text" name="date" class="form-control" value="' . $row['Sdate'] . '"/>' . '</td>' .
             '<input type="submit" value="Submit"/>';
         echo '</tr>';
         echo '</form>';    }

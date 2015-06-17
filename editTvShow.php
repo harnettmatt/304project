@@ -46,7 +46,7 @@ if($response){
             '<input type="hidden" name="id" class="form-control" value="' . $row['tvid'] . '"/>' . '</td><td align="left">' .
             '<input type="text" name="name" class="form-control" value="' . $row['TVName'] . '"/>' . '</td><td align="left">' .
             '<input type="text" name="age" class="form-control" value="' . $row['age_restriction'] . '"/>' . '</td><td align="left">' .
-            '<input type="text" name="year" class="form-control" value="' . $row['TVyear'] . '"/>' . '</td><td align="left">' .
+            '<input type="text" name="year" class="form-control" value="' . $row['TVyear'] . '"/>' . '</td>' .
             $row['overall_rating'] . '</td><td align="left">'.
             '<input type="submit" value="Submit"/>';
         echo '</tr>';

@@ -49,10 +49,10 @@ if($response){
             '<a href="rate.php?id='.$row['tvid'].'">Rate</a>' . '</td><td align="left">' .
             $row['age_restriction'] . '</td><td align="left">' .
             $row['TVyear'] . '</td><td align="left">' .
-            $row['overall_rating'] . '</td><td align="left">';
+            $row['overall_rating'] . '</td>';
         echo '</tr>';
     }
-
+    echo '</tr>';
     echo '</table>';
 
 } else {

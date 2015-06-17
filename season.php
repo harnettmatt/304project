@@ -45,7 +45,7 @@ if($response){
             '<a href="editSeason.php?id='.$row['tvid'].'&number='.$row['season_number'].'">Edit</a>' . ' ' .
             '<a href="episode.php?id='.$row['tvid'].'&number='.$row['season_number'].'">Watch</a>' . ' ' .
             '<a href="deleteSeason.php?id='.$row['tvid'].'&number='.$row['season_number'].'">Delete</a>'.' '.'</td><td align="left">'.
-            $row['Sdate'] . '</td><td align="left">';
+            $row['Sdate'] . '</td>';
         echo '</tr>';
     }
 

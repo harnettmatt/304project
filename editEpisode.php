@@ -58,7 +58,7 @@ if($response){
             $row['overall_rating'].'</td><td align="left">'.
             '<input type="text" name="age" class="form-control" value="' . $row['age_restriction'] . '"/>' . '</td><td align="left">' .
             $row['views'].'</td><td align="left">'.
-            '<input type="text" name="length" class="form-control" value="' . $row['ELength'] . '"/>' . '</td><td align="left">' .
+            '<input type="text" name="length" class="form-control" value="' . $row['ELength'] . '"/>' . '</td>' .
             '<input type="submit" value="Submit"/>';
         echo '</tr>';
         echo '</form>';    }

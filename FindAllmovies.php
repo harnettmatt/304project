@@ -52,7 +52,7 @@ if($response){
             $row['views'].'</td><td align="left">'.
             $row['overall_rating'].'</td><td align="left">'.
             $row['age_restriction'].'</td><td align="left">'.
-            $row['description'].'</td><td align="left">';
+            $row['description'].'</td>';
 
         echo '</tr>';
     }
