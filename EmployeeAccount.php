@@ -27,6 +27,8 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response){
+    echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.'<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a><br/>';
+
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
 
@@ -40,7 +42,6 @@ if($response){
     // mysqli_fetch_array will return a row of data from the query
     // until no further data is available
     while($row = mysqli_fetch_array($response)){
-
         echo '<tr>
         <td align="left">'.$row['ID'].'</td>
         <td align="left">'.$row['FirstName'].'</td>
@@ -54,7 +55,6 @@ if($response){
     }
 
     echo '</table>';
-
 } else {
 
     echo "Couldn't issue database query<br />";
