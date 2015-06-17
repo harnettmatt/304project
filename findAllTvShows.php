@@ -31,7 +31,7 @@ if($response){
 	cellspacing="5" cellpadding="8" border="1">
 
 	<tr><td align="left"><b>ID</b></td>
-	<td align="left"><b>Name</b></td>
+	<td align="left"><b>Name <a href="AddNewTvSeries.php">(Add New TV Series)</a></b></td>
 	<td align="left"><b>Age Restriction</b></td>
 	<td align="left"><b>Year</b></td>
 	<td align="left"><b>Overall Rating</b></td>';
@@ -50,7 +50,6 @@ if($response){
             $row['age_restriction'] . '</td><td align="left">' .
             $row['TVyear'] . '</td><td align="left">' .
             $row['overall_rating'] . '</td><td align="left">';
-
         echo '</tr>';
     }
 

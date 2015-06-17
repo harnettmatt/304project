@@ -33,7 +33,7 @@ if($response){
 	cellspacing="5" cellpadding="8" border="1">
 
     <td align="left"><b>Id</b></td>
-	<td align="left"><b>Season</b></td>
+	<td align="left"><b>Season <a href="AddNewSeason.php">(Add New Season)</a></b></td>
 	<td align="left"><b>Date</b></td>';
 
     // mysqli_fetch_array will return a row of data from the query

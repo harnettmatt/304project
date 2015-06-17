@@ -30,7 +30,7 @@ if($response){
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
 
-	<tr><td align="left"><b>Name</b></td>
+	<tr><td align="left"><b>Name <a href="AddMovie.php">(Add New Movie)</a></b></td>
 	<td align="left"><b>Director</b></td>
 	<td align="left"><b>year</b></td>
 	<td align="left"><b>views</b></td>

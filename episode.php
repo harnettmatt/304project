@@ -36,7 +36,7 @@ if($response){
 	<tr><td align="left"><b>Season</b></td>
 	<td align="left"><b>Episode</b></td>
 	<td align="left"><b>Director</b></td>
-	<td align="left"><b>Name</b></td>
+	<td align="left"><b>Name <a href="AddNewEpisode.php">(Add New Episode)</a></b></td>
 	<td align="left"><b>Date</b></td>
 	<td align="left"><b>Overall Rating</b></td>
 	<td align="left"><b>Age Restriction</b></td>
