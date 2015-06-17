@@ -43,7 +43,6 @@ $info = array(
     'Username' => $row['Username'],
     'Password' => $row['Password'],
 );
-
 ?>
 
 <html>
@@ -53,10 +52,10 @@ $info = array(
 <body>
 <table>
     <tr>
-        <td><h2><a href="FindAllmovies.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
-        <td><h2>TV Shows</h2></td>
-        <td><h2><a href="EmployeeAccount.php?UserName='<?php echo $info['UserName']?>'">Accounts</h2></td></tr>
-$Username = $_GET['UserName'];
+        <td><h2><a href="FindAllmovies.php?UserName=<?php echo $info['Username']; ?>"> Movies </a></h2></td>
+        <td><h2><a href="findAllTVShows.php?UserName=<?php echo $info['Username']; ?>">TV Shows</a></h2></td>
+        <td><h2><a href="EmployeeAccount.php?UserName=<?php echo $info['Username']; ?>">Accounts</a></h2></td>
+        <td><h2><a href="stat.php?">Dashboard</a></h2></td></tr>
 </table>
 <p><h3>Account Information</h3></p>
 <form action=EmployeeHome.php method="post">

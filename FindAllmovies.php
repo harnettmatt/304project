@@ -11,7 +11,7 @@
  * Date: 15-06-14
  * Time: 7:34 AM
  */
-
+$UserName = $_GET['UserName'];
 // Get a connection for the database
 $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
 if ($mysqli->connect_errno) {
@@ -27,9 +27,7 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response){
-    echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.
-        '<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a>'.' '.
-        '<a href="FindAllUsers.php" style="font-size:x-large">List of Users</a>'.'<br/>';
+
 
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
@@ -49,9 +47,9 @@ if($response){
         echo '<tr><td align="left">' .
             $row['Mname'].' '.
             '<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
-            '<a href="watchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
+            '<a href="employeewatchmovie.php?Mname='.$row['Mname'].'&director='.$row['director'].'&Myear='.$row['Myear'].'&UserName='.$UserName.'">Watch</a>'. ' ' .
             '<a href="deleteMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Delete</a>'.' '.
-            '<a href="rate.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>'.'</td><td align="left">' .
+            '<a href="EmployeeRateMovie.php?Mname='.$row['Mname'].'&director='.$row['director'].'&Myear='.$row['Myear'].'&UserName='.$UserName.'">Rate</a>'.'</td><td align="left">' .
             $row['director'].'</td><td align="left">'.
             $row['Myear'].'</td><td align="left">'.
             $row['views'].'</td><td align="left">'.

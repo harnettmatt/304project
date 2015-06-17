@@ -5,6 +5,9 @@
  * Date: 6/14/15
  * Time: 4:34 PM
  */
+
+
+
 if (isset( $_POST['watch'])){
     $Mname = $_POST['Mname'];
     $director = $_POST['director'];
@@ -42,7 +45,8 @@ else{
     <title>
         <?php
             if (isset( $_POST['Mname'])){
-                echo 'Watching ' . $_POST['Mname']; }
+                echo 'Watching ' . $_POST['Mname'];
+                }
             else{
                 echo 'Could not find movie name';
             }?>

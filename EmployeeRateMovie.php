@@ -67,33 +67,24 @@ else {
     <h1><?php echo $Mname?></h1>
 </head>
 <body>
-    <p>
-        <form action="WatchMovie.php" method="post">
-            <input type="hidden" name="Mname" value=<?php echo "$Mname"; ?>>
-            <input type="hidden" name="director" value=<?php echo "$director"; ?>>
-            <input type="hidden" name="Myear" value=<?php echo "$Myear"; ?>>
-            <input type="hidden" name="UserName" value=<?php echo $UserName; ?>>
-            <input type="submit" name="watch" value="watch">
-        </form>
-    </p>
 <h3>Rate This Movie</h3>
-    <p><form action="usermovie.php" method="post">
-            <input type="hidden" name="Mname" value='<?php echo "$Mname" ?>'>
-            <input type="hidden" name="director" value='<?php echo "$director" ?>'>
-            <input type="hidden" name="Myear" value='<?php echo "$Myear" ?>'>
-            <input type="hidden" name="UserName" value='<?php echo "$UserName" ?>'>
-            <table>
-                <tr>
-                    <td><input type="radio" name = "rate" value="1">1</td>
-                    <td><input type="radio" name = "rate" value="2">2</td>
-                    <td><input type="radio" name = "rate" value="3">3</td>
-                    <td><input type="radio" name = "rate" value="4">4</td>
-                    <td><input type="radio" name = "rate" value="5">5</td>
-                    <td><input type="submit" name="submit"></td>
-                </tr>
-            </table>
-        </form>
-    </p>
+<p><form action="EmployeeRateMovie.php" method="post">
+    <input type="hidden" name="Mname" value='<?php echo "$Mname" ?>'>
+    <input type="hidden" name="director" value='<?php echo "$director" ?>'>
+    <input type="hidden" name="Myear" value=<?php echo "$Myear" ?>>
+    <input type="hidden" name="UserName" value=<?php echo "$UserName" ?>>
+    <table>
+        <tr>
+            <td><input type="radio" name = "rate" value="1">1</td>
+            <td><input type="radio" name = "rate" value="2">2</td>
+            <td><input type="radio" name = "rate" value="3">3</td>
+            <td><input type="radio" name = "rate" value="4">4</td>
+            <td><input type="radio" name = "rate" value="5">5</td>
+            <td><input type="submit" name="submit"></td>
+        </tr>
+    </table>
+</form>
+</p>
 </body>
 </html>
 

@@ -48,7 +48,6 @@ $info = array(
     'Email' => $row['Email'],
     'AccountType' => $row['AccountType']
 );
-
 ?>
 
 <html>
@@ -58,8 +57,8 @@ $info = array(
 <body>
 <table>
     <tr>
-        <td><h2><a href="UserMovieList.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
-        <td><h2>TV Shows</h2></td></tr>
+        <td><h2><a href="UserMovieList.php?UserName=<?php echo $info['UserName']; ?>"> Movies </a></h2></td>
+        <td><h2><a href="userTvShow.php?UserName=<?php echo $info['UserName']; ?>">TV Shows</h2></td></tr>
 </table>
 <p><h3>Account Information</h3></p>
 <form action=mainaccount.php method="post">

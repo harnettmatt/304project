@@ -17,7 +17,7 @@ if ($mysqli->connect_errno) {
 }
 
 $UserName = $_GET['UserName'];
-
+echo $UserName;
 $query = "SELECT * FROM Movie";
 
 $response = @mysqli_query($mysqli, $query);
