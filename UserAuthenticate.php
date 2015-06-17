@@ -54,20 +54,38 @@ if(isset($_POST['submit'])) {
         $query3 = "SELECT * FROM Employee WHERE Username =  '". "$Uname". "'";
         "AND Password = '" ."$Pword"."'";
         $result3 = $mysqli->query($query3);
-
-
-
         if($result->num_rows > 0) {
+            $query4 = "SELECT ID FROM Account WHERE Username =  '". "$Uname". "'";
+            "AND Password = '" ."$Pword"."'";
+            $result4 = $mysqli->query($query4);
+            $row4 = mysqli_fetch_array($result4);
+            $ID = $row4['ID'];
             session_start();
-            $_SESSION['Uname'] = $Uname;
-//            $_SESSION['Pword'] = $Pword;   CANNOT ACCESS $PWORD
+//            $_SESSION['Uname'] = $Uname;
+            $_SESSION['ID'] = $ID;
             header("location:MainAccount.php");
             exit;
         } else if ($result2->num_rows > 0){
+            $query4 = "SELECT ID FROM User_U_Has WHERE Username =  '". "$Uname". "'";
+            "AND Password = '" ."$Pword"."'";
+            $result4 = $mysqli->query($query4);
+            $row4 = mysqli_fetch_array($result4);
+            $ID = $row4['ID'];
+            session_start();
+//            $_SESSION['Uname'] = $Uname;
+            $_SESSION['ID'] = $ID;
             header("location:SubAccount.php");
             exit;
         } else if ($result3->num_rows > 0){
-            header("location:EmployeeAccount.php");
+            $query4 = "SELECT ID FROM Employee WHERE Username =  '". "$Uname". "'";
+            "AND Password = '" ."$Pword"."'";
+            $result4 = $mysqli->query($query4);
+            $row4 = mysqli_fetch_array($result4);
+            $ID = $row4['ID'];
+            session_start();
+//            $_SESSION['Uname'] = $Uname;
+            $_SESSION['ID'] = $ID;
+            header("location:EmployeeHome.php");
             exit;
         } else {
             echo "Incorrect User Name or Password, please try again!";

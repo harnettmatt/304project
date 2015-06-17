@@ -11,29 +11,26 @@ if (isset( $_POST['update'])) {
     $LastName = $_POST['LastName'];
     $Phone = $_POST['Phone'];
     $Address = $_POST['Address'];
+    $Email = $_POST['Email'];
     $UserName = $_POST['UserName'];
     $Password = $_POST['Password'];
-    $CreditCard = $_POST['CreditCard'];
-    $Email = $_POST['Email'];
     $ID = $_POST['ID'];
     $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
     if ($mysqli->connect_errno) {
         echo "Failed to connect to MySQL: " . $mysqli->connect_error;
     }
-    $query1 = "UPDATE Account SET FirstName = '$FirstName', LastName = '$LastName' , Phone = '$Phone' , Address ='$Address' , UserName = '$UserName' , Password = '$Password'
-              , CreditCard = '$CreditCard' , Email = '$Email' WHERE ID =  '$ID'";
+    $query1 = "UPDATE Employee SET FirstName = '$FirstName', LastName = '$LastName' , Phone = '$Phone' , Address = '$Address' , Email = '$Email' ,Username = '$UserName' , Password = '$Password' WHERE ID =  '$ID'";
     $result1 = $mysqli->query($query1);
 }
 else{
     session_start();
     $ID = $_SESSION['ID'];
 }
-
 $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
 if ($mysqli->connect_errno) {
     echo "Failed to connect to MySQL: " . $mysqli->connect_error;
 }
-$query = "SELECT * FROM Account WHERE ID =  '". "$ID". "'";
+$query = "SELECT * FROM Employee WHERE ID =  '". "$ID". "'";
 $result = $mysqli->query($query);
 $row = mysqli_fetch_array($result); //try this in userauthentication
 $info = array(
@@ -42,11 +39,9 @@ $info = array(
     'FirstName' => $row['FirstName'],
     'Phone' => $row['Phone'],
     'Address' => $row['Address'],
-    'UserName' => $row['UserName'],
-    'Password' => $row['Password'],
-    'CreditCard' => $row['CreditCard'],
     'Email' => $row['Email'],
-    'AccountType' => $row['AccountType']
+    'Username' => $row['Username'],
+    'Password' => $row['Password'],
 );
 
 ?>
@@ -58,19 +53,20 @@ $info = array(
 <body>
 <table>
     <tr>
-        <td><h2><a href="UserMovieList.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
-        <td><h2>TV Shows</h2></td></tr>
+        <td><h2><a href="EmployeeMovieList.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
+        <td><h2>TV Shows</h2></td>
+        <td><h2>Accounts</h2></td></tr>
+
 </table>
 <p><h3>Account Information</h3></p>
-<form action=mainaccount.php method="post">
+<form action=EmployeeHome.php method="post">
     <p>First Name: <input type="text" name="FirstName" size="30" value= '<?php echo $info['FirstName'] ?>' /> </p>
     <p>Last Name: <input type="text" name="LastName" size="30" value= '<?php echo $info['LastName'] ?>' /> </p>
     <p>Phone: <input type="text" name="Phone" size="30" value= '<?php echo $info['Phone'] ?>' /> </p>
     <p>Address: <input type="text" name="Address" size="30" value= '<?php echo $info['Address'] ?>' /> </p>
-    <p>UserName: <input type="text" name="UserName" size="30" value= '<?php echo $info['UserName'] ?>' /> </p>
-    <p>Password: <input type="text" name="Password" size="30" value= '<?php echo $info['Password'] ?>' /> </p>
-    <p>Credit Card: <input type="text" name="CreditCard" size="30" value= '<?php echo $info['CreditCard'] ?>' /> </p>
     <p>Email: <input type="text" name="Email" size="30" value= '<?php echo $info['Email'] ?>' /> </p>
+    <p>UserName: <input type="text" name="UserName" size="30" value= '<?php echo $info['Username'] ?>' /> </p>
+    <p>Password: <input type="text" name="Password" size="30" value= '<?php echo $info['Password'] ?>' /> </p>
     <input type="hidden" name="ID" value = '<?php echo $info['ID']?>'/>
     <p><input type="submit" name="update" value="update"/></p>
 </form>
