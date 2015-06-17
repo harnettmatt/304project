@@ -20,6 +20,7 @@ if ($mysqli->connect_errno) {
 
 // Create a query for the database
 $query = "SELECT Mname, director, Myear, views, overall_rating, age_restriction, description FROM Movie";
+$user=$_GET['UserName'];
 
 // Get a response from the database by sending the onnection
 // and the query
@@ -49,7 +50,7 @@ if($response){
         echo '<tr><td align="left">' .
             $row['Mname'].' '.
             '<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
-            '<a href="watchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
+            '<a href="employeeWatchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
             '<a href="deleteMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Delete</a>'.' '.
             '<a href="rate.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>'.'</td><td align="left">' .
             $row['director'].'</td><td align="left">'.

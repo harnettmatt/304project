@@ -20,6 +20,7 @@ if ($mysqli->connect_errno) {
 
 	// Create a query for the database
 	$query = "SELECT ID, LastName, FirstName, Phone, Address, UserName, Password, CreditCard, Email, AccountType FROM Account";
+    //$user=$_GET['UserName'];
 
 	// Get a response from the database by sending the connection
 	// and the query

@@ -20,6 +20,7 @@ if ($mysqli->connect_errno) {
 
 // Create a query for the database
 $query = "SELECT * FROM TVSeries";
+$user=$_GET['UserName'];
 
 // Get a response from the database by sending the onnection
 // and the query
