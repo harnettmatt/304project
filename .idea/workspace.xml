@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32b8d8b9-bdba-461d-b4a4-5b1a6af3d690" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EmployeeHome.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/MainAccount.php" afterPath="$PROJECT_DIR$/MainAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SubAccount.php" afterPath="$PROJECT_DIR$/SubAccount.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserAuthenticate.php" afterPath="$PROJECT_DIR$/UserAuthenticate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UserMovie.php" afterPath="$PROJECT_DIR$/UserMovie.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WatchMovie.php" afterPath="$PROJECT_DIR$/WatchMovie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmployeeAccount.php" afterPath="$PROJECT_DIR$/EmployeeAccount.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmployeeAdded.php" afterPath="$PROJECT_DIR$/EmployeeAdded.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EmployeeHome.php" afterPath="$PROJECT_DIR$/EmployeeHome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindAllEmployees.php" afterPath="$PROJECT_DIR$/FindAllEmployees.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindAllUsers.php" afterPath="$PROJECT_DIR$/FindAllUsers.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/FindAllmovies.php" afterPath="$PROJECT_DIR$/FindAllmovies.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/addUser.php" afterPath="$PROJECT_DIR$/addUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editMovie.php" afterPath="$PROJECT_DIR$/editMovie.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/editTvShow.php" afterPath="$PROJECT_DIR$/editTvShow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_movie_data.php" afterPath="$PROJECT_DIR$/edit_movie_data.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/edit_tv_data.php" afterPath="$PROJECT_DIR$/edit_tv_data.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="304project.iws" />
@@ -36,26 +41,9 @@
       <file leaf-file-name="UserMovie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserMovie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="1515">
-              <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-              <folding>
-                <marker date="1434519297000" expanded="true" signature="600:639" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:648" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:649" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:659" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:662" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:697" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="600:718" placeholder="SELECT * FRO..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="824:894" placeholder="UPDATE m_rat..." />
-                <marker date="1434519297000" expanded="true" signature="1150:1233" placeholder="INSERT INTO ..." />
-                <marker date="1434519297000" expanded="true" signature="1472:1571" placeholder="SELECT user_..m_rate..." />
-                <marker date="1434519297000" expanded="true" signature="1886:2003" placeholder="UPDATE Movie..." />
-                <marker date="1434519297000" expanded="true" signature="2203:2415" placeholder="..." />
-                <marker date="1434519297000" expanded="true" signature="2210:2294" placeholder="..." />
-                <marker date="1434519297000" expanded="true" signature="2301:2415" placeholder="..." />
-                <marker date="1434519297000" expanded="true" signature="2309:2318" placeholder="..." />
-                <marker date="1434519297000" expanded="true" signature="2362:2415" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1515">
+              <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -63,22 +51,9 @@
       <file leaf-file-name="MainAccount.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MainAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1185">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-              <folding>
-                <marker date="1434524385000" expanded="true" signature="671:909" placeholder="UPDATE Accou..." />
-                <marker date="1434524385000" expanded="true" signature="830:909" placeholder="UPDATE Accou..." />
-                <marker date="1434524385000" expanded="true" signature="830:909" placeholder="SELECT * FRO..m_watch..." />
-                <marker date="1434524385000" expanded="true" signature="1231:1278" placeholder="SELECT * FRO..Account..." />
-                <marker date="1434524385000" expanded="true" signature="1757:1793" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1764:1793" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1872:1914" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1872:1942" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1872:1960" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1880:1914" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="1889:1914" placeholder="..." />
-                <marker date="1434524385000" expanded="true" signature="2129:2220" placeholder="..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1185">
+              <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -86,26 +61,47 @@
       <file leaf-file-name="SubAccount.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SubAccount.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.125" vertical-offset="165" max-vertical-offset="1080">
+            <state vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1080">
               <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1434524571000" expanded="true" signature="563:716" placeholder="UPDATE Accou..." />
-                <marker date="1434524571000" expanded="true" signature="1037:1087" placeholder="SELECT * FRO..User_U_Has..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeHome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EmployeeAccount.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EmployeeAccount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1155">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WatchMovie.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/WatchMovie.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26618704" vertical-offset="115" max-vertical-offset="810">
+              <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+              <folding>
+                <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+                <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+                <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+                <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeHome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/EmployeeHome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-              <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1200">
+              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1434524673000" expanded="true" signature="631:827" placeholder="UPDATE Emplo..." />
-                <marker date="1434524673000" expanded="true" signature="1148:1196" placeholder="SELECT * FRO..Employee..." />
               </folding>
             </state>
           </provider>
@@ -114,7 +110,7 @@
       <file leaf-file-name="SignIn.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SignIn.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="465">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465">
               <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
               <folding />
             </state>
@@ -124,16 +120,19 @@
       <file leaf-file-name="UserAuthenticate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UserAuthenticate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.0" vertical-offset="345" max-vertical-offset="1710">
-              <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-              <folding>
-                <marker date="1434524540000" expanded="true" signature="998:1054" placeholder="SELECT * FRO..Account..." />
-                <marker date="1434524540000" expanded="true" signature="1161:1220" placeholder="SELECT * FRO..User_U_Has..." />
-                <marker date="1434524540000" expanded="true" signature="1329:1386" placeholder="SELECT * FRO..Employee..." />
-                <marker date="1434524540000" expanded="true" signature="1534:1591" placeholder="SELECT ID FR..Account..." />
-                <marker date="1434524540000" expanded="true" signature="2009:2069" placeholder="SELECT ID FR..User_U_Has..." />
-                <marker date="1434524540000" expanded="true" signature="2486:2544" placeholder="SELECT ID FR..Employee..." />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1710">
+              <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserMovieList.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/UserMovieList.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="960">
+              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -162,10 +161,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="44" />
     <option name="y" value="23" />
-    <option name="width" value="1872" />
-    <option name="height" value="1057" />
+    <option name="width" value="1387" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -190,7 +189,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -211,6 +209,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -296,7 +295,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="23" width="1872" height="1057" extended-state="6" />
+    <frame x="44" y="23" width="1387" height="837" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -304,9 +303,8 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1295082" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13234201" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -314,6 +312,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -368,31 +367,15 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MainAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="900">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WatchMovie.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+            <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+            <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+            <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
           </folding>
         </state>
       </provider>
@@ -409,11 +392,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="960">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -421,24 +400,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1350">
           <caret line="33" column="42" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
-          <folding>
-            <marker date="1434519297000" expanded="true" signature="600:639" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:648" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:649" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:659" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:662" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:697" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:718" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="824:894" placeholder="UPDATE m_rat..." />
-            <marker date="1434519297000" expanded="true" signature="1150:1233" placeholder="INSERT INTO ..." />
-            <marker date="1434519297000" expanded="true" signature="1472:1571" placeholder="SELECT user_..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="1886:2003" placeholder="UPDATE Movie..." />
-            <marker date="1434519297000" expanded="true" signature="2203:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2210:2294" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2301:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2309:2318" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2362:2415" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -455,18 +417,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+            <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+            <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+            <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
           </folding>
         </state>
       </provider>
@@ -483,11 +437,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="32" max-vertical-offset="960">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -526,18 +476,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="510">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+            <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+            <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+            <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
           </folding>
         </state>
       </provider>
@@ -560,24 +502,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="1230">
           <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-          <folding>
-            <marker date="1434519297000" expanded="true" signature="600:639" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:648" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:649" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:659" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:662" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:697" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:718" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="824:894" placeholder="UPDATE m_rat..." />
-            <marker date="1434519297000" expanded="true" signature="1150:1233" placeholder="INSERT INTO ..." />
-            <marker date="1434519297000" expanded="true" signature="1472:1571" placeholder="SELECT user_..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="1886:2003" placeholder="UPDATE Movie..." />
-            <marker date="1434519297000" expanded="true" signature="2203:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2210:2294" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2301:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2309:2318" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2362:2415" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -585,11 +510,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="244" max-vertical-offset="960">
           <caret line="41" column="43" selection-start-line="41" selection-start-column="43" selection-end-line="41" selection-end-column="43" />
-          <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -597,7 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -636,18 +556,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+            <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+            <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+            <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
           </folding>
         </state>
       </provider>
@@ -670,24 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1230">
           <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
-          <folding>
-            <marker date="1434519297000" expanded="true" signature="600:639" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:648" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:649" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:659" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:662" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:697" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:718" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="824:894" placeholder="UPDATE m_rat..." />
-            <marker date="1434519297000" expanded="true" signature="1150:1233" placeholder="INSERT INTO ..." />
-            <marker date="1434519297000" expanded="true" signature="1472:1571" placeholder="SELECT user_..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="1886:2003" placeholder="UPDATE Movie..." />
-            <marker date="1434519297000" expanded="true" signature="2203:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2210:2294" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2301:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2309:2318" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2362:2415" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -695,11 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="495">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -751,7 +640,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="495">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -802,7 +689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.44359255" vertical-offset="0" max-vertical-offset="913">
           <caret line="31" column="7" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -810,96 +696,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="1095">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="370" max-vertical-offset="1080">
+          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
           <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT ID, L..Employee..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#6#92#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UserMovieList.php">
+    <entry file="file://$PROJECT_DIR$/EmployeeAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60655737" vertical-offset="45" max-vertical-offset="960">
-          <caret line="45" column="63" selection-start-line="45" selection-start-column="63" selection-end-line="45" selection-end-column="63" />
-          <folding>
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434516351000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WatchMovie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57377046" vertical-offset="0" max-vertical-offset="915">
-          <caret line="40" column="6" selection-start-line="40" selection-start-column="6" selection-end-line="40" selection-end-column="6" />
-          <folding>
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="UPDATE Movie..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1434517964000" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UserMovie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="1515">
-          <caret line="24" column="47" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-          <folding>
-            <marker date="1434519297000" expanded="true" signature="600:639" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:648" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:649" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:659" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:662" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:697" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="600:718" placeholder="SELECT * FRO..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="824:894" placeholder="UPDATE m_rat..." />
-            <marker date="1434519297000" expanded="true" signature="1150:1233" placeholder="INSERT INTO ..." />
-            <marker date="1434519297000" expanded="true" signature="1472:1571" placeholder="SELECT user_..m_rate..." />
-            <marker date="1434519297000" expanded="true" signature="1886:2003" placeholder="UPDATE Movie..." />
-            <marker date="1434519297000" expanded="true" signature="2203:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2210:2294" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2301:2415" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2309:2318" placeholder="..." />
-            <marker date="1434519297000" expanded="true" signature="2362:2415" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MainAccount.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125" vertical-offset="0" max-vertical-offset="1185">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <marker date="1434524385000" expanded="true" signature="671:909" placeholder="UPDATE Accou..." />
-            <marker date="1434524385000" expanded="true" signature="830:909" placeholder="UPDATE Accou..." />
-            <marker date="1434524385000" expanded="true" signature="830:909" placeholder="SELECT * FRO..m_watch..." />
-            <marker date="1434524385000" expanded="true" signature="1231:1278" placeholder="SELECT * FRO..Account..." />
-            <marker date="1434524385000" expanded="true" signature="1757:1793" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1764:1793" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1872:1914" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1872:1942" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1872:1960" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1880:1914" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="1889:1914" placeholder="..." />
-            <marker date="1434524385000" expanded="true" signature="2129:2220" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="719">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SignIn.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.625" vertical-offset="0" max-vertical-offset="465">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="465">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
@@ -907,39 +727,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/UserAuthenticate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.0" vertical-offset="345" max-vertical-offset="1710">
-          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
-          <folding>
-            <marker date="1434524540000" expanded="true" signature="998:1054" placeholder="SELECT * FRO..Account..." />
-            <marker date="1434524540000" expanded="true" signature="1161:1220" placeholder="SELECT * FRO..User_U_Has..." />
-            <marker date="1434524540000" expanded="true" signature="1329:1386" placeholder="SELECT * FRO..Employee..." />
-            <marker date="1434524540000" expanded="true" signature="1534:1591" placeholder="SELECT ID FR..Account..." />
-            <marker date="1434524540000" expanded="true" signature="2009:2069" placeholder="SELECT ID FR..User_U_Has..." />
-            <marker date="1434524540000" expanded="true" signature="2486:2544" placeholder="SELECT ID FR..Employee..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="1710">
+          <caret line="64" column="32" selection-start-line="64" selection-start-column="32" selection-end-line="64" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubAccount.php">
+    <entry file="file://$PROJECT_DIR$/MainAccount.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125" vertical-offset="165" max-vertical-offset="1080">
-          <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1434524571000" expanded="true" signature="563:716" placeholder="UPDATE Accou..." />
-            <marker date="1434524571000" expanded="true" signature="1037:1087" placeholder="SELECT * FRO..User_U_Has..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1185">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserMovieList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="960">
+          <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UserMovie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="1515">
+          <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EmployeeHome.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1200">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="840" max-vertical-offset="1200">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1434524673000" expanded="true" signature="631:827" placeholder="UPDATE Emplo..." />
-            <marker date="1434524673000" expanded="true" signature="1148:1196" placeholder="SELECT * FRO..Employee..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WatchMovie.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26618704" vertical-offset="115" max-vertical-offset="810">
+          <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+          <folding>
+            <marker date="1434565099000" expanded="true" signature="573:645" placeholder="SELECT * FRO..m_watch..." />
+            <marker date="1434565099000" expanded="true" signature="739:814" placeholder="INSERT INTO ..." />
+            <marker date="1434565099000" expanded="true" signature="902:992" placeholder="SELECT * FRO..Movie..." />
+            <marker date="1434565099000" expanded="true" signature="1135:1240" placeholder="UPDATE Movie..." />
           </folding>
         </state>
       </provider>

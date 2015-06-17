@@ -27,10 +27,14 @@ $response = @mysqli_query($mysqli, $query);
 
 // If the query executed properly proceed
 if($response){
+    echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.
+        '<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a>'.' '.
+        '<a href="FindAllUsers.php" style="font-size:x-large">List of Users</a>'.'<br/>';
+
     echo '<table align="left"
 	cellspacing="5" cellpadding="8" border="1">
 
-	<tr><td align="left"><b>Name</b></td>
+	<tr><td align="left"><b>Name <a href="AddMovie.php">(Add New Movie)</a></b></td>
 	<td align="left"><b>Director</b></td>
 	<td align="left"><b>year</b></td>
 	<td align="left"><b>views</b></td>
@@ -43,13 +47,17 @@ if($response){
     while($row = mysqli_fetch_array($response)){
 
         echo '<tr><td align="left">' .
-            $row['Mname'] . ' ' . '<a href="editMovie.php?mName='.$row['Mname'].'">Edit</a>' . '</td><td align="left">' .
-            $row['director'] . '</td><td align="left">' .
-            $row['Myear'] . '</td><td align="left">' .
-            $row['views'] . '</td><td align="left">' .
-            $row['overall_rating'] . '</td><td align="left">' .
-            $row['age_restriction'] . '</td><td align="left">' .
-            $row['description'] . '</td><td align="left">';
+            $row['Mname'].' '.
+            '<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
+            '<a href="watchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
+            '<a href="deleteMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Delete</a>'.' '.
+            '<a href="rate.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>'.'</td><td align="left">' .
+            $row['director'].'</td><td align="left">'.
+            $row['Myear'].'</td><td align="left">'.
+            $row['views'].'</td><td align="left">'.
+            $row['overall_rating'].'</td><td align="left">'.
+            $row['age_restriction'].'</td><td align="left">'.
+            $row['description'].'</td>';
 
         echo '</tr>';
     }

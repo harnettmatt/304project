@@ -53,10 +53,10 @@ $info = array(
 <body>
 <table>
     <tr>
-        <td><h2><a href="EmployeeMovieList.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
+        <td><h2><a href="FindAllmovies.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
         <td><h2>TV Shows</h2></td>
-        <td><h2>Accounts</h2></td></tr>
-
+        <td><h2><a href="EmployeeAccount.php?UserName='<?php echo $info['UserName']?>'">Accounts</h2></td></tr>
+$Username = $_GET['UserName'];
 </table>
 <p><h3>Account Information</h3></p>
 <form action=EmployeeHome.php method="post">
