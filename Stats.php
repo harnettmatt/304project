@@ -30,6 +30,10 @@ $query6 = "SELECT Mname, overall_rating FROM Movie WHERE overall_rating = (SELEC
 $query7 = "SELECT Ename, E.overall_rating, TVName FROM Episode_e_has E, TVSeries T WHERE T.tvid=E.tvid AND E.overall_rating = (SELECT MAX(overall_rating) FROM Episode_e_has)";
 $query8 = "SELECT Mname, overall_rating FROM Movie WHERE overall_rating = (SELECT MIN(overall_rating) FROM Movie)";
 $query9 = "SELECT Ename, E.overall_rating, TVName FROM Episode_e_has E, TVSeries T WHERE T.tvid=E.tvid AND E.overall_rating = (SELECT MIN(overall_rating) FROM Episode_e_has)";
+$query10 = "SELECT S.username FROM Account S WHERE NOT EXISTS (SELECT C.Mname FROM Movie C WHERE NOT EXISTS (SELECT E.username FROM m_watch E WHERE C.Mname=E.Mname AND E.username=S.username))";
+$query11 = "SELECT x.Mname as M_name, MAX(x.hello) as average FROM (SELECT Mname, AVG(user_rating) as hello FROM m_rate Group By Mname) x";
+$query12 = "SELECT x.Mname as M_name, MIN(x.hello) as average FROM (SELECT Mname, AVG(user_rating) as hello FROM m_rate Group By Mname) x";
+
 
 echo "Total Number of Movies:     ";
 
@@ -131,6 +135,25 @@ while($row9 = mysqli_fetch_array($response9)){
     echo '</tr>';
 }
 
+echo "<br><br><br>Users who have watched all movies:     ";
+
+$response10 = @mysqli_query($mysqli, $query10);
+while($row10 = mysqli_fetch_array($response10)){
+    echo '<tr><td align="left">' .
+        "&emsp;" . $row10['username'] . '</td><td align="left">'."&emsp;&emsp;";
+    echo '</tr>';
+}
+
+
+echo "<br><br><br>Average User Rating of Most Rated Movie:     ";
+
+$response11 = @mysqli_query($mysqli, $query11);
+while($row11 = mysqli_fetch_array($response11)){
+echo '<tr><td align="left">' .
+        "&emsp;" .$row11['M_name'] . '</td><td align="left">'.
+        "&emsp;Average Rating:" . $row11['average'] . '</td><td align="left">'."&emsp;&emsp;";
+        echo '</tr>';
+}
 
 ?>
 
