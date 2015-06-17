@@ -54,6 +54,7 @@ if($response){
             $row['Ename']. ' '.
             '<a href="editEpisode.php?id='.$row['season_number'].'&number='.$row['episode_number'].'">Edit</a>'.' '.
             '<a href="watchEP.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Watch</a>'. ' '.
+            '<a href="deleteEpisode.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Delete</a>'. ' '.
             '<a href="rate.php?id='.$row['tvid'].'&season='.$row['season_number'].'&ep='.$row['episode_number'].'">Rate</a>'.'</td><td align="left">'.
             $row['Edate'] . '</td><td align="left">'.
             $row['overall_rating'].'</td><td align="left">'.

@@ -43,15 +43,16 @@ if($response){
     while($row = mysqli_fetch_array($response)){
 
         echo '<tr><td align="left">' .
-            $row['Mname'] . ' ' . '<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
+            $row['Mname'].' '.'<a href="editMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Edit</a>' . ' ' .
             '<a href="watchMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Watch</a>'. ' ' .
-            '<a href="rate.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>' . '</td><td align="left">' .
-            $row['director'] . '</td><td align="left">' .
-            $row['Myear'] . '</td><td align="left">' .
-            $row['views'] . '</td><td align="left">' .
-            $row['overall_rating'] . '</td><td align="left">' .
-            $row['age_restriction'] . '</td><td align="left">' .
-            $row['description'] . '</td><td align="left">';
+            '<a href="deleteMovie.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Delete</a>'.' '.
+            '<a href="rate.php?mName='.$row['Mname'].'&director='.$row['director'].'&year='.$row['Myear'].'">Rate</a>'.'</td><td align="left">' .
+            $row['director'].'</td><td align="left">'.
+            $row['Myear'].'</td><td align="left">'.
+            $row['views'].'</td><td align="left">'.
+            $row['overall_rating'].'</td><td align="left">'.
+            $row['age_restriction'].'</td><td align="left">'.
+            $row['description'].'</td><td align="left">';
 
         echo '</tr>';
     }
