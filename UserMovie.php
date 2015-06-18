@@ -69,10 +69,10 @@ else {
 <body>
     <p>
         <form action="WatchMovie.php" method="post">
-            <input type="hidden" name="Mname" value=<?php echo "$Mname"; ?>>
-            <input type="hidden" name="director" value=<?php echo "$director"; ?>>
-            <input type="hidden" name="Myear" value=<?php echo "$Myear"; ?>>
-            <input type="hidden" name="UserName" value=<?php echo $UserName; ?>>
+            <input type="hidden" name="Mname" value="<?php echo "$Mname"; ?>">
+            <input type="hidden" name="director" value="<?php echo "$director"; ?>">
+            <input type="hidden" name="Myear" value="<?php echo "$Myear"; ?>">
+            <input type="hidden" name="UserName" value="<?php echo $UserName; ?>">
             <input type="submit" name="watch" value="watch">
         </form>
     </p>

@@ -50,13 +50,13 @@ $info = array(
 <table>
     <tr>
         <td><h2><a href="UserMovieList.php?UserName='<?php echo $info['UserName']; ?>'"> Movies </a></h2></td>
-        <td><h2>TV Shows</h2></td></tr>
+        <td><h2><a href="userTvShow.php?UserName='<?php echo $info['UserName']; ?>'">TV Shows</a></h2></td></tr>
 </table>
 <p><h3>Account Information</h3></p>
 <form action=subaccount.php method="post">
     <p>First Name: <input type="text" name="FirstName" size="30" value= '<?php echo $info['FirstName'] ?>' /> </p>
     <p>Last Name: <input type="text" name="LastName" size="30" value= '<?php echo $info['LastName'] ?>' /> </p>
-    <p>Age: <input type="text" name="Age" size="30" value= '<?php echo $info['Age'] ?>' /> </p>
+    <input type="hidden" name="Age" size="30" value= '<?php echo $info['Age'] ?>' />
     <p>UserName: <input type="text" name="UserName" size="30" value= '<?php echo $info['UserName'] ?>' /> </p>
     <p>Password: <input type="text" name="Password" size="30" value= '<?php echo $info['Password'] ?>' /> </p>
     <input type="hidden" name="ID" value = '<?php echo $info['ID']?>'/>

@@ -19,7 +19,8 @@ if ($mysqli->connect_errno) {
 }
 
 	// Create a query for the database
-	$query = "SELECT ID, LastName, FirstName, Phone, Address, UserName, Password, CreditCard, Email, AccountType FROM Account";
+	$query = "SELECT * FROM Account";
+    //$user=$_GET['UserName'];
 
 	// Get a response from the database by sending the connection
 	// and the query
@@ -27,9 +28,6 @@ if ($mysqli->connect_errno) {
 
 	// If the query executed properly proceed
 	if($response){
-        echo '<a href="FindAllmovies.php" style="font-size:x-large">List of Movies</a>'.' '.
-            '<a href="findAllTvShows.php" style="font-size:x-large">List of TV Shows</a>'.' '.
-            '<a href="FindAllUsers.php" style="font-size:x-large">List of Users</a>'.'<br/>';
 
 
         echo '<table align="left" cellspacing="5" cellpadding="8">
@@ -49,28 +47,30 @@ if ($mysqli->connect_errno) {
 	    // until no further data is available
 	    while($row = mysqli_fetch_array($response)){
 
-	    echo '<tr><td align="left">' .
-            $row['ID'] . '</td><td align="left">' .
-           	$row['LastName'] . '</td><td align="left">' .
-           	$row['FirstName'] . '</td><td align="left">' .
-        	$row['Phone'] . '</td><td align="left">' .
-           	$row['Address'] . '</td><td align="left">' .
-          	$row['UserName'] . '</td><td align="left">' .
-           	$row['Password'] . '</td><td align="left">' .
-       	    $row['CreditCard'] . '</td><td align="left">' .
-            $row['Email'] . '</td><td align="left">' .
-       	    $row['AccountType'] . '</td><td align="left">';
+	        echo '<tr>
+            <td align="left">' . $row['ID'] . '</td>
+            <td align="left">' . $row['LastName'] . '</td>
+            <td align="left">' . $row['FirstName'] . '</td>
+            <td align="left">' . $row['Phone'] . '</td>
+            <td align="left">' . $row['Address'] . '</td>
+            <td align="left">' . $row['UserName'] . ' '.
+                '<a href="editAccount.php?user='.$row['UserName'].'&pw='.$row['Password'].'&id='.$row['ID'].'">Edit</a>'. ' '.
+                '<a href="deleteUser.php?user='.$row['UserName'].'&pw='.$row['Password'].'&id='.$row['ID'].'">Delete</a>'.'</td>
+            <td align="left">' . $row['Password'] . '</td>
+            <td align="left">' . $row['CreditCard'] . '</td>
+            <td align="left">' . $row['Email'] . '</td>
+            <td align="left">' . $row['AccountType'] . '</td>';
 
-	    echo '</tr>';
-	}
+    	    echo '</tr>';
+	    }
 
-	echo '</table>';
+	    echo '</table>';
 
 	} else {
 
-	echo "Couldn't issue database query<br />";
+	    echo "Couldn't issue database query<br />";
 
-	echo mysqli_error($mysqli);
+	    echo mysqli_error($mysqli);
 
 	}
 

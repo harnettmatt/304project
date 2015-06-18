@@ -56,7 +56,7 @@ $info = array(
         <td><h2><a href="findAllTVShows.php?UserName=<?php echo $info['Username']; ?>">TV Shows</a></h2></td>
         <td><h2><a href="FindAllUsers.php">Accounts</a></h2></td>
         <td><h2><a href="FindUsers.php">Users</a></h2></td>
-        <td><h2><a href="stat.php">Dashboard</a></h2></td></tr>
+        <td><h2><a href="Stats.php">Dashboard</a></h2></td></tr>
 </table>
 <p><h3>Account Information</h3></p>
 <form action=EmployeeHome.php method="post">
