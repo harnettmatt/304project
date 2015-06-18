@@ -18,7 +18,6 @@ if ($mysqli->connect_errno) {
 
 $UserName = $_GET['UserName'];
 $query = "SELECT * FROM Movie";
-
 $response = @mysqli_query($mysqli, $query);
 
 if ($response) {

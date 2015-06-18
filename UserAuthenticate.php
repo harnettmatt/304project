@@ -72,8 +72,8 @@ if(isset($_POST['submit'])) {
             $row4 = mysqli_fetch_array($result4);
             $ID = $row4['ID'];
             session_start();
-//            $_SESSION['Uname'] = $Uname;
-            $_SESSION['ID'] = $ID;
+            $_SESSION['Uname'] = $Uname;
+//            $_SESSION['ID'] = $ID;
             header("location:SubAccount.php");
             exit;
         } else if ($result3->num_rows > 0){

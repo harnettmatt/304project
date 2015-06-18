@@ -10,7 +10,6 @@ $UserName = $_GET['UserName'];
 $Mname = $_GET['Mname'];
 $director = $_GET['director'];
 $Myear = $_GET['Myear'];
-
 echo 'Watching ' . $Mname;
 $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
 if ($mysqli->connect_errno) {

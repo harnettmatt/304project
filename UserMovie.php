@@ -13,7 +13,6 @@ if (isset($_POST['submit'])){
         $Myear = $_POST['Myear'];
         $UserName = $_POST['UserName'];
 
-
         $mysqli = new mysqli("cs310moviedb.cmtryuplfrbx.us-west-2.rds.amazonaws.com", "cs310", "cs310pass", "cs310db");
         if ($mysqli->connect_errno) {
             echo "Failed to connect to MySQL: " . $mysqli->connect_error;

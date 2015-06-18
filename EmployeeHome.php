@@ -40,7 +40,7 @@ $info = array(
     'Phone' => $row['Phone'],
     'Address' => $row['Address'],
     'Email' => $row['Email'],
-    'Username' => $row['Username'],
+    'Username' => $row['UserName'],
     'Password' => $row['Password'],
 );
 ?>

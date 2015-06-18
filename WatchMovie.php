@@ -18,11 +18,12 @@ if (isset( $_POST['watch'])){
     if ($mysqli->connect_errno) {
         echo "Failed to connect to MySQL: " . $mysqli->connect_error;
     }
+    $time = 0;
     //ADD ROW TO REPRESENT USER WATCHES MOVIE
     $query1 = "SELECT * FROM m_watch WHERE UserName =  '$UserName' and Mname = '$Mname'";
     $result1 = $mysqli->query($query1);
     if($result1->num_rows < 1){
-        $query2 = "INSERT INTO m_watch VALUES (0, '$UserName','$Mname', '$director', '$Myear')";
+        $query2 = "INSERT INTO m_watch VALUES ($time, '$UserName','$Mname', '$director', '$Myear')";
         $result2 = $mysqli->query($query2);
     }
 
